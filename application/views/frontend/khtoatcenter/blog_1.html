@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>احتفال الدخول</title>
+        <style>
+            body {
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            canvas#confetti {
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                top: 0px;
+                left: 0px;
+                z-index: 1000;
+                pointer-events: none;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="confetti"></canvas>
+
+        <!-- مكتبة js-confetti -->
+        <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+        <!-- مكتبة canvas-confetti -->
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+        <script>
+            const canvas = document.querySelector('#confetti');
+            const jsConfetti = new JSConfetti();
+
+            // تأثير js-confetti
+            window.addEventListener('load', () => {
+                setTimeout(() => {
+                    // الانفجار الأول
+                    jsConfetti.addConfetti({
+                        confettiRadius: 5,
+                        confettiNumber: 600, // عدد الجزيئات
+                        shapes: ['circle', 'rect'], // أشكال متنوعة
+                        colors: [
+                            '#FFC700', '#FF0000', '#00FF00', '#0000FF', '#FF69B4',
+                            '#8A2BE2', '#00FFFF', '#FFD700', '#DC143C', '#7FFF00'
+                        ],
+                    }).then(() => {
+                        // الانتظار نصف ثانية ثم تنفيذ الانفجار الثاني
+                        setTimeout(() => {
+                            jsConfetti.addConfetti({
+                                confettiRadius: 5, // حجم الجزيئات
+                                confettiNumber: 600, // عدد جزيئات أكبر
+                                shapes: ['circle', 'rect'], // نفس الأشكال المتنوعة
+                                colors: [
+                                    '#FFC700', '#FF0000', '#00FF00', '#0000FF', '#FF69B4',
+                                    '#8A2BE2', '#00FFFF', '#FFD700', '#DC143C', '#7FFF00'
+                                ],
+                            });
+                        }, 500);
+                    });
+                }, 1000); // الانتظار ثانية واحدة قبل البدء
+            });
+
+            // تأثير canvas-confetti
+            const end = Date.now() + 3 * 1000; // مدة التأثير 15 ثانية
+            const colors = ['#FFC700', '#FF0000', '#00FF00', '#0000FF', '#FF69B4',
+                '#8A2BE2', '#00FFFF', '#FFD700', '#DC143C', '#7FFF00']; // ألوان المربعات
+
+            (function frame() {
+                confetti({
+                    particleCount: 2,
+                    angle: 60,
+                    spread: 200,
+                    origin: {x: 0},
+                    colors: colors,
+                    shapes: ['square'], // تحديد الشكل كمربعات
+                });
+
+                confetti({
+                    particleCount: 2,
+                    angle: 120,
+                    spread: 200,
+                    origin: {x: 1},
+                    colors: colors,
+                    shapes: ['square'], // تحديد الشكل كمربعات
+                });
+
+                if (Date.now() < end) {
+                    requestAnimationFrame(frame);
+                }
+            })(); // استدعاء الدالة لتنفيذ التأثير
+        </script>
+    </body>
+</html>

@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>jQuery MultiSelector Basic Demo</title>
+        <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+        <link href="https://bootswatch.com/paper/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="../dist/multiselector.js"></script>
+        <style>
+            body { background-color:#fafafa;}
+            .container { margin:150px auto; max-width:640px;}
+            .container ul li {
+                cursor: pointer;
+                width: 100px;
+                height: 100px;
+                background-color: #ECF0F1;
+                margin: 10px;
+                list-style: none;
+                border-radius:3px;
+            }
+            .container ul {
+                clear: both;
+            }
+            .container li {
+                float: left;
+            }
+            .container .ms-selected {
+                /*color: blue;*/
+                background-color: #3498DB;
+            }
+
+
+            .lili{
+                margin: 0 10px 10px 0;
+                background: #fff;
+                transition: background 0.2s;
+                width: 100px;
+                height: 100px;
+                color: #222;
+                font-weight: bold;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                box-shadow: 0px 1px 1px #ccc;
+            }
+
+        </style>
+
+    </head>
+    <body>
+
+
+        <div class="container">
+            <h1>jQuery MultiSelector Basic Demo</h1>
+            <p>Look the source code and check the console to understand how the plugin works.</p>
+            <br>
+            <ul id="test">
+                <li class="lili"><span>1/2/2020</span></li>
+                <li>2</li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <script>
+            $(document).ready(function ()
+            {
+                $("#test").multiSelector({
+                    selector: 'li',
+                    onSelectionEnd: function (list, parent, element) //Callback
+                    {
+                        console.log("First parameter: object list");
+                        console.log(list);
+
+                        console.log("Second parameter: parent object");
+                        console.log(parent);
+
+                        console.log("Third parameter: clicked object");
+                        console.log(element);
+                    }
+                });
+                $("#selectAll").click(function () {
+                    $("#test").multiSelector('select');
+                });
+                $("#unselectAll").click(function () {
+                    $("#test").multiSelector('deselect');
+                });
+            });
+        </script>
+
+
+    </body>
+</html>

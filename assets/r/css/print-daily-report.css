@@ -1,0 +1,89 @@
+.ctrl {
+    margin-top: 0px !important;
+}
+
+@media print {
+    .ctrl {
+        display: none;
+    }
+}
+table.table-style-two {
+    font-family:  "Noto Kufi Arabic";
+    color: #333333;
+    border-width: 1px;
+    border-color: #000;
+    border-collapse: collapse;
+}
+
+table.table-style-two thead {
+    font-size: 12px;
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #000;
+}
+
+table.table-style-two tr:hover td {
+    background-color: #DFEBF1;
+}
+
+table.table-style-two td {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #000;
+    text-align: center;
+    font-size: 12px;
+}
+
+@media print {
+    table.table-style-two {
+        background-color: #fff !important;
+        -webkit-print-color-adjust: exact; 
+    }}
+
+@media print {
+    table.table-style-two thead {
+        background-color: #d8d8d8 !important;
+    }}
+
+table.table-style-two2 {
+    font-family: "Noto Kufi Arabic", tahoma, verdana, arial, sans-serif;
+    color: #333333;
+    border-collapse: collapse;
+}
+
+table.table-style-two2 thead {
+    font-size: 12px;
+    padding: 8px;
+    border-color: #000;
+}
+
+table.table-style-two2 td {
+    border-width: 1px;
+    padding: 8px;
+    font-size: 12px;
+}
+
+@media print {
+    table.table-style-two2 {
+        background-color: #fff !important;
+        -webkit-print-color-adjust: exact; 
+        border-color: #000;
+    }}
+
+@media print {
+    table.table-style-two2 thead {
+        background-color: #d8d8d8 !important;
+        border-color: #000;
+    }
+
+    .table-bordered th, .table-bordered td {
+        border-color: #000 !important; 
+    }
+}
+
+
+.vrt-header td {
+    writing-mode: vertical-rl;
+}

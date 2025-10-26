@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase /
+RewriteCond $1 !^(index\.php|assets|frontend|robots\.txt)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?/$1 [L]
+#SetEnv DATABASE 8ayem

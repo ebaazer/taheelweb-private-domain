@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <title>EasyQRCodeJS Demo</title>
+        <script src="easy.qrcode.min.js" type="text/javascript" charset="utf-8"></script>
+    </head>
+
+    <body>
+
+        <div id="qr_taheelweb"></div>
+
+        <script type="text/javascript">
+            var qr_taheelweb = [
+
+                {
+                    title: "Logo + DotScale",
+                    config: {
+                        text: "https://www.taheelweb.com/employee/print_data_employee//", // Content
+
+                        width: 240,
+                        height: 240,
+                        colorDark: "#000000",
+                        colorLight: "#ffffff",
+
+                        PI: '#000000',
+                        PI_TL: '#000000', // Position Inner - Top Left 
+                        PO_TL: '#000000', // Position Outer - Top Right
+
+                        // === Logo
+                        logo: "logo-qr.png", // LOGO
+                        //					logo:"http://127.0.0.1:8020/easy-qrcodejs/demo/logo.png",  
+                        					logoWidth:100, 
+                        					logoHeight:100,
+                        logoBackgroundColor: '#ffffff', // Logo backgroud color, Invalid when `logBgTransparent` is true; default is '#ffffff'
+                        logoBackgroundTransparent: true, // Whether use transparent image, default is false
+
+                        // === Posotion Pattern(Eye) Color
+                        PO: '#000000', // Global Position Outer color. if not set, the defaut is `colorDark`
+                        PI: '#02a7a0', // Global Position Inner color. if not set, the defaut is `colorDark`
+                        //					PO_TL:'', // Position Outer - Top Left 
+                        PI_TL: '#02a7a0', // Position Inner - Top Left 
+                        PO_TR: '#000000', // Position Outer - Top Right 
+                        PI_TR: '#02a7a0', // Position Inner - Top Right 
+                        //					PO_BL:'', // Position Outer - Bottom Left 
+                        //					PI_BL:'' // Position Inner - Bottom Left 
+
+                        // === Timing Pattern Color
+                        //	timing: '#e1622f', // Global Timing color. if not set, the defaut is `colorDark`
+                        timing_H: '#02a7a0', // Horizontal timing color
+                        timing_V: '#02a7a0', // Vertical timing color
+
+                        // === Aligment color
+                        AI: '#02a7a0',
+                        AO: '#000000',
+
+                        correctLevel: QRCode.CorrectLevel.H, // L, M, Q, H
+                        dotScale: 1.75
+                    }
+                }
+            ];
+
+            var t = new QRCode(document.getElementById("qr_taheelweb"), qr_taheelweb[0].config);
+        </script>
+
+    </body>
+
+</html>

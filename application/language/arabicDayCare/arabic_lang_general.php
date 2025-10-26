@@ -1,0 +1,134 @@
+<?php
+
+/* 	
+ * 	@author 	    : taheelweb
+ *      Date created    : 01/03/2021
+ *      Arabic Language File
+ * 	
+ * 	    http://taheelweb.com
+ *      The system for managing institutions for people with special needs
+ */
+
+$lang['student'] = 'مستفيد';
+$lang['admit_student'] = 'اضافة مستفيد';
+$lang['student_promotion'] = 'ترفيع المستفيد';
+$lang['create_student_payment'] = 'انشاء فاتورة لمستفيد';
+$lang['add_student'] = 'اضافة مستفيد';
+$lang['addmission_form'] = 'تسجيل مستفيد';
+$lang['add_new_student'] = 'اضافة مستفيد جديد';
+$lang['student_profile'] = 'ملف المستفيد';
+$lang['student_record_body_success'] = 'تم حفظ سجل الملاحظات للمستفيد';
+$lang['select_student'] = 'حدد المستفيد';
+$lang['the_student_has'] = 'المستفيد لديه';
+$lang['total_sessions'] = 'مجموع جلسات المستفيد من';
+$lang['for_the_student'] = 'للمستفيد';
+$lang['add_student_transport'] = 'اضافة مستفيد للنقل';
+$lang['students_name'] = 'اسم المستفيد';
+$lang['please_select_student'] = 'الرجاء تحديد المستفيد';
+$lang['the_student_is_busy'] = 'المستفيد مشغول';
+$lang['the_student_is_available'] = 'المستفيد متاح';
+$lang['edit_student'] = 'تعديل بيانات مستفيد';
+$lang['student_name'] = 'اسم المستفيد';
+$lang['no_student_found'] = 'لم يتم العثور على المستفيد';
+$lang['stu'] = 'مستفيد';
+$lang['update_info_student'] = 'عدل بيانات المستفيد';
+$lang['insert_student'] = 'سجل المستفيد';
+$lang['delete_student'] = 'حذف المستفيد';
+$lang['student_deleted'] = 'تم حذف المستفيد';
+$lang['insert_case_study'] = 'قام بعمل دراسة حالة للمستفيد';
+$lang['the_student_has_a_pre_existing_case_study'] = 'المستفيد له دراسة حالة موجودة مسبقا';
+$lang['delete_case_study'] = 'حذف دراسة الحالة للمستفيد';
+$lang['edit_transport_student'] = 'عدل بيانات نقل المستفيد';
+$lang['for_student'] = 'للمستفيد';
+$lang['does_the_student_have_any_of_the_following_language_problems'] = 'هل يعاني المستفيد أي من المشاكل اللغوية التالية';
+$lang['does_the_student_suffer_from_a_disease'] = 'هل يعاني المستفيد من مرض مزمن';
+$lang['beneficiary_number'] = 'رقم المستفيد';
+$lang['outgoing_student'] = 'إنسحاب المستفيد';
+$lang['are_you_sure_you_want_to_register_student_outgoing'] = 'هل انت متأكد انك تريد تسجيل انسحاب المستفيد؟';
+$lang['are_you_sure_you_want_to_enroll_for_this_year'] = 'هل انت متأكد انك تريد تسجيل المستفيد لهذا العام؟';
+$lang['regular_study_student'] = 'تسجيل المستفيد لهذا العام';
+$lang['Evaluation_was_done_at'] = 'تم تقييم المستفيد';
+$lang['bulk_educational_plan_3.'] = 'احصل على رقم تعريف المستفيد من خلال كود المستفيد (مثال كود رقم 101-2-17 رقم المستفيد في مثل هذه الحالة هو 101)';
+$lang['done_outgoing_student_status'] = 'تم تسجيل انسحاب المستفيد';
+$lang['objective_student'] = 'أهداف المستفيد في المجال/ للعرض فقط';
+$lang['student_assessment'] = 'تقييم مستفيد';
+$lang['type_the_name_of_the_student_teacher_parent'] = 'اكتب اسم المستفيد أو الموظف أو ولي الأمر';
+$lang['student_add'] = 'اضافة مستفيد';
+$lang['remove_student'] = 'ازالة المستفيد';
+$lang['student_already_enrolled'] = 'المستفيد مرفع مسبقا';
+$lang['student_edit'] = 'تعديل مستفيد';
+$lang['about_the_student'] = 'عن المستفيد';
+$lang['parent_of_student'] = 'ولي أمر المستفيد';
+$lang['pick_student'] = 'المستفيد';
+$lang['please_pick_student'] = 'يرجى تحديد المستفيد';
+$lang['pick_plan_error_empty_student'] = 'يرجى اختيار المستفيد.';
+$lang['empty_plans_error_message'] = 'لا يوجد خطط لهذا المستفيد.';
+$lang['assess_student_now'] = 'تقييم المستفيد الآن';
+$lang['student_has_no_monthly_plan'] = 'لم نعثر على سجل متابعة لهذا المستفيد.';
+$lang['student_plan'] = 'استمارة مستوى الأداء الحالي';
+$lang['student_plans'] = 'خطط المستفيد';
+$lang['outgoing_student_status'] = 'انسحاب مستفيد';
+$lang['student_documents'] = 'مستندات المستفيد';
+$lang['student_info'] = 'معلومات المستفيد';
+$lang['table_of_student_sessions'] = 'جدول جلسات المستفيد';
+$lang['student_record_body_error'] = 'لم يتم حفظ سجل الملاحظات للمستفيد';
+$lang['view_the_student_file'] = 'عرض ملف المستفيد';
+$lang['student_card'] = 'عرض بطاقة المستفيد';
+$lang['student_enrollment_for_the_academic_year'] = 'اضافة مستفيد من الارشيف';
+$lang['upload_files_to_student'] = 'رفع ملفات للمستفيد';
+$lang['delete_student_from_transfer'] = 'حذف مستفيد من مركبة';
+$lang['going'] = 'المستفيد منتسب لهذا العام';
+$lang['withdraw'] = 'المستفيد منسحب';
+$lang['setup_basic_information_for_student'] = 'المعلومات الاساسية للمستفيد';
+$lang['please_enter_beneficiary_number'] = 'يرجى كتابة رقم المستفيد';
+$lang['profile_overview'] = 'إنجاز المستفيد';
+$lang['this_student_is_already_registered'] = 'المستفيد موجود مسبقا';
+$lang['new_student'] = 'مستفيد جديد';
+$lang['are_you_sure_the_student_withdraws'] = 'هل انت متأكد من انسحاب المستفيد';
+$lang['are_you_sure_remove_students_specialist'] = 'هل انت متأكد من ازالة المستفيد من قائمة الطلاب المنتسبين للأخصائي';
+$lang['student_removed_from_specialist_student_list_and_session_schedule'] = 'سيتم ازالة المستفيد من قائمة طلاب الاخصائي وازالته من جدول الجلسات';
+$lang['student_was removed__list_specialist_students'] = 'تم ازالة المستفيد من قائمة طلاب الاخصائي';
+$lang['student_services'] = 'خدمات المستفيد';
+$lang['student_2'] = 'مستفيدا';
+$lang['empty_genre_steps'] = 'يرجى تحديد مستوى اداء المستفيد في جميع المهارات';
+$lang['add_student_to_schedule'] = 'إضافة/تعديل مستفيد للجدول';
+$lang['schedule_min_reached'] = 'يجب تحديد مستفيد على الأقل لحفظ الجلسة';
+$lang['no_plan_exists'] = "لا يوجد خطة للمستفيد";
+$lang['empty_plan'] = 'لا يوجد خطة لهذا المستفيد';
+$lang['empty_plan_or_plan_term'] = 'لا يوجد خطة لهذا للمستفيد او لا توجد خطة فترية';
+$lang['avatar'] = "صورة المستفيد";
+$lang['change_avatar'] = "تغيير صورة المستفيد";
+$lang['student_assessment_delete'] = 'تقييم المستفيد';
+$lang['student_plan_delete'] = 'خطة المستفيد المبنية على التقييم';
+$lang['monthly_plan_delete'] = 'الخطط الفترية المبنية على خطة المستفيد';
+$lang['student_absent_days'] = 'عدد أيام غياب المستفيد';
+$lang['absent_days'] = 'عدد أيام غياب المستفيد';
+$lang['student_not_trained'] = 'لم يتم تدريب المستفيد';
+$lang['services_provided_to_the_student'] = 'الخدمات المقدمة للمستفيد';
+$lang['add_services_to_the_student'] = 'اضافة خدمة للمستفيد';
+$lang['Student registration form'] = 'استمارة تسجيل مستفيد';
+$lang['Register a new student'] = 'تسجيل مستفيد جديد';
+$lang['Discuss student behavior'] = 'مناقشة سلوك مستفيد';
+$lang['General follow-up of the student'] = 'متابعة عامة للمستفيد';
+$lang['student_assessments'] = 'تقييمات المستفيد';
+$lang['attendance_report_for_stu'] = 'تقرير حضور مستفيد';
+$lang['You must add a class before adding a student'] = 'عليك اضافة صف قبل اضافة مستفيد';
+$lang['Student Information System'] = 'نظام معلومات المستفيد';
+$lang['He transferred the student'] = 'قام بنقل المستفيد';
+$lang['He added himself a training session with the student'] = 'اضاف لنفسه جلسة تدريب مع المستفيد';
+$lang['Training session with the student'] = 'جلسة تدريب مع المستفيد';
+$lang['Delete his training session with the student'] = 'حذف جلسته التدريبية مع المستفيد';
+$lang['Choose a parent for the student to be registered'] = 'اختر ولي امر للمستفيد المراد تسجيله';
+$lang['The student added'] = 'قام باضافة المستفيد';
+$lang['Attendance report by student'] = 'تقرير الحضور حسب المستفيد';
+$lang['Select the student to be evaluated'] = 'اختر المستفيد المراد تقييمه';
+$lang['Your job title does not allow you to evaluate a student'] = 'المسمى الوظيفي الذي لديك لا يسمح له بتقييم المستفيد';
+$lang['taheelweb is a multi-purpose day care center management system that helps in automating the daily operations of educational institutions without hassle and provides insightful reports and 360-degree tracking so that administration officials can make better and faster decisions to improve the quality of the productivity of their institutions.'] = 'تأهيل ويب هو نظام إدارة مراكز الرعاية النهارية متعدد الأغراض يساعد في أتمتة العمليات اليومية للمؤسسات التربوية بدون متاعب ويوفر تقارير ثاقبة وتتبع حتى يتمكن المسؤولون من اتخاذ قرارات أفضل وأسرع لتحسين جودة الخدمات المقدمة للمستفيدين وإنتاجية مؤسساتهم.';
+$lang['Student registration'] = 'تسجيل المستفيدين';
+$lang['List of patients names'] = 'كشف بأسماء المستفيدين';
+$lang['the_beneficiary_suffers_from_the_following_language_problems'] = 'يعاني المستفيد من المشاكل اللغوية التالية';
+$lang['disability_category'] = 'التشخيص';
+$lang['disability'] = 'نوع الاعاقة';
+$lang['please_select_disability_category'] = 'الرجاء اختيار نوع الاعاقة';
+$lang['type_disability'] = 'نوع الاعاقة';
+

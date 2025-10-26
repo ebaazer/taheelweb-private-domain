@@ -1,0 +1,39 @@
+body {
+    font-family:  "Calibri"
+}
+
+.invoice-header .row{
+    /*padding: 0 !important;*/
+}
+
+.pick-list-footer.ui.grid>.row {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.ui.grid.invoice-header-first .row {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.ui.grid.invoice-header-first .row:first-child {
+    padding-top: 10px;
+}
+.ui.grid.invoice-header-first .row:last-child {
+    padding-bottom: 20px;
+}
+
+.invoice-header .left-content, 
+.invoice-header .right-content {
+    font-size: 14px;
+}
+
+.ctrl {
+    margin-top: 0px !important;
+}
+
+@media print {
+    .ctrl {
+        display: none;
+    }
+}

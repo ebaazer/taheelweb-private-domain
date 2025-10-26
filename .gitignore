@@ -1,0 +1,7 @@
+/nbproject/private/
+/application/config/database.php
+/application/config/inc_db.php
+/application/logs/
+/uploads/
+*.htaccess
+/vendor/
