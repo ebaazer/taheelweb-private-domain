@@ -137,7 +137,6 @@ if ($client_id == 'afac') {
                                 </li>
                                 -->
 
-
                                 <li> <a href="<?php echo base_url(); ?>home/blog" class="dropdown-toggle"><i class="fa fa-pencil-square-o five"></i> <br/>
                                         <?php echo $this->lang->line('blog'); ?></a>
                                     </a>
@@ -148,7 +147,7 @@ if ($client_id == 'afac') {
                                 </li>
                                 <li> <a href="<?php echo base_url(); ?>home/booking" class="dropdown-toggle"><i class="fa fa-book four"></i> <br/>
                                         <?php echo $this->lang->line('Booking'); ?></a>
-                                </li>                        
+                                </li>
                                 <li> <a href="<?php echo base_url(); ?>home/contact_us" class="dropdown-toggle"><i class="fa fa-envelope seven"></i> <br/>
                                         <?php echo $this->lang->line('contact'); ?></a>
                                 </li>
@@ -158,8 +157,6 @@ if ($client_id == 'afac') {
                                 </li>                        
 
                             </ul>
-
-
                         </div>
                         <?php
                     }
@@ -195,7 +192,6 @@ if ($client_id == 'afac') {
                             </li>
                             -->
 
-
                             <li> <a href="<?php echo base_url(); ?>home/blog" class="dropdown-toggle"><i class="fa fa-pencil-square-o five"></i> <br/>
                                     <?php echo $this->lang->line('blog'); ?></a>
                                 </a>
@@ -211,21 +207,16 @@ if ($client_id == 'afac') {
                                     <?php echo $this->lang->line('contact'); ?></a>
                             </li>
 
-                            <li> <a href="<?php echo base_url(); ?>login" class="dropdown-toggle"><i class="fa fa-sign-in five"></i> <br/>
+                            <li> <a href="https://<?php echo $client_id?>.taheelweb.com/login" class="dropdown-toggle"><i class="fa fa-sign-in five"></i> <br/>
                                     <?php echo $this->lang->line('login'); ?></a>
                             </li>                        
 
                         </ul>
 
-
                     </div>
                 <?php }
-                ?>      
-
+                ?>
             </div>
-
-
         </div>
     </div>
 </div>
-<!--end menu-->
