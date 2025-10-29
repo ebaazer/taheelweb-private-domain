@@ -1,3 +1,25 @@
+<?php
+if (isset($_SERVER['HTTP_X_FORWARDED_HOST'])) {
+    $source = $_SERVER['HTTP_X_FORWARDED_HOST'];
+} else {
+    $source = $_SERVER['HTTP_HOST'];
+}
+
+$client_host = explode(".", $source)[0];
+
+if ($client_host == 'acsn-center') {
+    $ling_login = 'acsncenter';
+} elseif ($client_host == 'khatwat-thabeta') {
+    $ling_login = 'khatwatthabeta';
+} elseif ($client_host == 'littlehands-clinic') {
+    $ling_login = 'littlehandsclinic';
+} elseif ($client_host == 'life-autism') {
+    $ling_login = 'lifeautism';
+} else {
+    $ling_login = $client_host;
+}
+?>
+
 <div class="topbar red-3 white-2 more-padding topbar-padding">
     <div class="container">
         <?php
@@ -207,7 +229,7 @@ if ($client_id == 'afac') {
                                     <?php echo $this->lang->line('contact'); ?></a>
                             </li>
 
-                            <li> <a href="https://<?php echo $client_id?>.taheelweb.com/login" class="dropdown-toggle"><i class="fa fa-sign-in five"></i> <br/>
+                            <li> <a href="https://<?php echo $ling_login; ?>.taheelweb.com/login" class="dropdown-toggle"><i class="fa fa-sign-in five"></i> <br/>
                                     <?php echo $this->lang->line('login'); ?></a>
                             </li>                        
 
